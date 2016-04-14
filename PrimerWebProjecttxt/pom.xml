@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>PrimerWebProject</groupId>
   <artifactId>PrimerWebProject</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1-joaquin</version>
   <packaging>war</packaging>
    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -79,7 +79,7 @@
   <dependency>
 	<groupId>junit</groupId>
 	<artifactId>junit</artifactId>
-	<version>4.10</version>
+	<version>4.12</version>
 	</dependency>
    </dependencies>
             
