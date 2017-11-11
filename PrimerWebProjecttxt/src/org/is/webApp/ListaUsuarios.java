@@ -79,6 +79,7 @@ public class ListaUsuarios {
 			System.out.println("Numero Usuarios leidos:" + i );
 		} catch (IOException e) {
 			Usuario usuario= new Usuario("Error en cargarUsuariosDelArchivo :", e.getMessage());
+			usuariosLeidos.add(usuario);
 			System.out.println("Error en cargarUsuariosDelArchivo :" + e.getMessage());
 			System.out.println(System.getProperty("user.dir"));
 		}
