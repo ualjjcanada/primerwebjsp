@@ -1,6 +1,7 @@
 package org.is.webApp;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -14,8 +15,8 @@ public class ListaUsuarios {
 	// private String rutaArchivo = "PrimerWebProjecttxt/WebContent/datos/usuarios.txt";
 
 	// deploy on Ubuntu
-	// private String rutaArchivo = "$CATALINA_HOME/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
-	private String rutaArchivo = "datos/usuarios.txt";
+	private String rutaArchivo = "$CATALINA_HOME/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
+	// private String rutaArchivo = "datos/usuarios.txt";
 	
 	/* TIP: Edit tomcat defaul directory:
 	*  and I edit the tomcat argument in Eclipse IDE. 
@@ -77,6 +78,7 @@ public class ListaUsuarios {
 			in.close();
 			System.out.println("Numero Usuarios leidos:" + i );
 		} catch (IOException e) {
+			Usuario usuario= new Usuario("Error en cargarUsuariosDelArchivo :", e.getMessage());
 			System.out.println("Error en cargarUsuariosDelArchivo :" + e.getMessage());
 			System.out.println(System.getProperty("user.dir"));
 		}
