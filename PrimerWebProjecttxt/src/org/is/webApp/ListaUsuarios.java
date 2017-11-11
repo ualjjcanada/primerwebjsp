@@ -11,10 +11,10 @@ public class ListaUsuarios {
 	
 	//private String rutaArchivo = "../workspace/PrimerWebProject/WebContent/datos/usuarios.txt";
 	// dev on Eclipse
-	private String rutaArchivo = "PrimerWebProjecttxt/WebContent/datos/usuarios.txt";
+	// private String rutaArchivo = "PrimerWebProjecttxt/WebContent/datos/usuarios.txt";
 
 	// deploy on Ubuntu
-	// private String rutaArchivo = "$CATALINA_HOME/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
+	private String rutaArchivo = "$CATALINA_HOME/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
 	
 	/* TIP: Edit tomcat defaul directory:
 	*  and I edit the tomcat argument in Eclipse IDE. 
@@ -69,7 +69,7 @@ public class ListaUsuarios {
 				}
 
 				Usuario usuario= new Usuario(username, password, fecha);
-				// A�adir usuario a la lista
+				// Añadir usuario a la lista
 				usuariosLeidos.add(usuario);
 				i++;
 			}
