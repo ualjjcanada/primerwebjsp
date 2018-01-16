@@ -17,7 +17,7 @@ public class ListaUsuarios {
 	// deploy on Ubuntu
 	// private String rutaArchivo = "$CATALINA_HOME/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
 	String myEnv = System.getenv("CATALINA_HOME");
-	private String rutaArchivo = myEnv + "/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
+	private String rutaArchivo = myEnv + "/webapps/PrimerWebProject-0.0.1-joaquin/datos/usuarios.txt";
 	
 	/* TIP: Edit tomcat defaul directory:
 	*  and I edit the tomcat argument in Eclipse IDE. 
@@ -110,7 +110,7 @@ public class ListaUsuarios {
 
 			out.close();
 		} catch (IOException e) {
-			System.out.println("Excepci�n al guardar archivo de usuarios");
+			System.out.println("Excepción al guardar archivo de usuarios");
 		}
 
 	}

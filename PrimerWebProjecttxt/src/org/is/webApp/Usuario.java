@@ -12,7 +12,7 @@ public class Usuario {
 	public Usuario(String username, String password){
 		this.username = username;
 		this.password = password;
-		this.fechaCreacion = new Date(); // La fecha se asigna en el momento de la creación
+		this.fechaCreacion = new Date(); // La fecha se asigna en el momento de la creaciÃ³n
 	}
 
 	public Usuario(String username, String password, String fechaCreacion){
